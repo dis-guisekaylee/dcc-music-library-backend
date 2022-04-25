@@ -5,8 +5,8 @@
 const express = require("express");
 const cors = require("cors");
 const repoContext = require("./repository/repository-wrapper");
-const productValidate = require("./middleware/song-validation");
-const productLogger = require("./middleware/product-logger")
+const songValidate = require("./middleware/song-validation");
+const songLogger = require("./middleware/song-logger")
 const app = express();
 
 
@@ -20,54 +20,54 @@ app.use(cors());
 // ENDPOINTS //
 // http://localhost:5010/api/music
 
-// GET all products
-// http://localhost:5005/api/products
-app.get("/api/products", (req,res) => {
-    const products = repoContext.products.findAllProducts();
-    res.send(products);
+// GET all songs
+// http://localhost:5010/api/songs
+app.get("/api/songs", (req,res) => {
+    const songs = repoContext.songs.findAllSongs();
+    res.send(songs);
 });
 
 
-// GET product by id
-// http://localhost:5005/api/products/:id
-app.get("/api/products/:id", (req, res) => {
+// GET song by id
+// http://localhost:5010/api/songs/:id
+app.get("/api/songs/:id", (req, res) => {
     const id = req.params.id;
-    const product = repoContext.products.findProductById(id);
-    return res.send(product);
+    const song = repoContext.songs.findSongById(id);
+    return res.send(song);
 });
 
 
-// POST new product
-// http://localhost:5005/api/products
-app.post("/api/products", [productLogger, productValidate], (req,res) => {
-    const newProduct = req.body;
-    const addedProduct = repoContext.products.createProduct(newProduct);
-    return res.status(201).send(addedProduct);
+// POST new song
+// http://localhost:5010/api/songs
+app.post("/api/songs", [songLogger, songValidate], (req,res) => {
+    const newSong = req.body;
+    const addedSong = repoContext.songs.createSong(newSong);
+    return res.status(201).send(addedSong);
 });
 
 
-// PUT an existing product
-// http://localhost:5005/api/products/:id
-app.put("/api/products/:id", [productValidate], (req,res) => {
+// PUT an existing song
+// http://localhost:5010/api/songs/:id
+app.put("/api/songs/:id", [songValidate], (req,res) => {
     const id = parseInt(req.params.id);
-    const productPropertiesToModify = req.body;
-    const productToUpdate = repoContext.products.updateProduct(id, productPropertiesToModify);
-    return res.send(productToUpdate);
+    const songPropertiesToModify = req.body;
+    const songToUpdate = repoContext.songs.updateSong(id, songPropertiesToModify);
+    return res.send(songToUpdate);
 });
 
 
-// DELETE a product
-// http://localhost:5005/api/products/:id
-app.delete("/api/products/:id", (req,res) => {
+// DELETE a song
+// http://localhost:5010/api/songs/:id
+app.delete("/api/songs/:id", (req,res) => {
     const id = parseInt(req.params.id);
-    const deletedProduct = repoContext.products.deleteProduct(id);
-    return res.send(deletedProduct);
+    const deletedSong = repoContext.songs.deleteSong(id);
+    return res.send(deletedSong);
 });
 
 
 // STARTING A SERVER //
 
-const PORT = process.env.PORT || 5005;
+const PORT = process.env.PORT || 5010;
 
 app.listen(PORT, () => {
     console.log(`Server started on port number: ${PORT}`);

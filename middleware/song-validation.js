@@ -1,10 +1,11 @@
 function songValidate(req, res, next) {
   let product = req.body;
   let properties = [
-    { name: "name", type: "string" },
+    { name: "title", type: "string" },
     { name: "artist", type: "string" },
     { name: "album", type: "string" },
-    { name: "price", type: "number" },
+    { name: "genre", type: "string" },
+    { name: "releaseDate", type: "date"}
   ];
 
   for (const property of properties) {
