@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "Drive My Car",
+    "title": "Song Title",
     "album": "Rubber Soul",
     "artist": "The Beatles",
     "genre": "Folk Rock",
@@ -33,7 +33,7 @@
   },
   {
     "id": 5,
-    "title": "Michelle",
+    "title": "Song Title",
     "album": "Rubber Soul",
     "artist": "The Beatles",
     "genre": "Folk Rock",
@@ -41,14 +41,6 @@
   },
   {
     "id": 6,
-    "title": "What Goes On",
-    "album": "Rubber Soul",
-    "artist": "The Beatles",
-    "genre": "Folk Rock",
-    "releaseDate": "12/03/1965"
-  },
-  {
-    "id": 7,
     "title": "Girl",
     "album": "Rubber Soul",
     "artist": "The Beatles",
@@ -56,7 +48,7 @@
     "releaseDate": "12/03/1965"
   },
   {
-    "id": 8,
+    "id": 7,
     "title": "To The Edge",
     "album": "Shadowbringers Final Fantasy XIV Original Soundtrack",
     "artist": "Masayoshi Soken",
@@ -64,7 +56,7 @@
     "releaseDate": "09/11/2019"
   },
   {
-    "id": 9,
+    "id": 8,
     "title": "In My Life",
     "album": "Rubber Soul",
     "artist": "The Beatles",
@@ -72,7 +64,7 @@
     "releaseDate": "12/03/1965"
   },
   {
-    "id": 10,
+    "id": 9,
     "title": "Wait",
     "album": "Rubber Soul",
     "artist": "The Beatles",
@@ -80,7 +72,7 @@
     "releaseDate": "12/03/1965"
   },
   {
-    "id": 11,
+    "id": 10,
     "title": "If I Needed Someone",
     "album": "Rubber Soul",
     "artist": "The Beatles",
@@ -88,7 +80,7 @@
     "releaseDate": "12/03/1965"
   },
   {
-    "id": 12,
+    "id": 11,
     "title": "Run For Your Life",
     "album": "Rubber Soul",
     "artist": "The Beatles",
@@ -96,7 +88,7 @@
     "releaseDate": "12/03/1965"
   },
   {
-    "id": 13,
+    "id": 12,
     "title": "The District Sleeps Alone Tonight",
     "album": "Give Up",
     "artist": "The Postal Service",
@@ -104,7 +96,7 @@
     "releaseDate": "02/18/2003"
   },
   {
-    "id": 14,
+    "id": 13,
     "title": "Such Great Heights",
     "album": "Give Up",
     "artist": "The Postal Service",
@@ -112,7 +104,7 @@
     "releaseDate": "02/18/2003"
   },
   {
-    "id": 15,
+    "id": 14,
     "title": "Sleeping In",
     "album": "Give Up",
     "artist": "The Postal Service",
@@ -120,7 +112,7 @@
     "releaseDate": "02/18/2003"
   },
   {
-    "id": 16,
+    "id": 15,
     "title": "Nothing Better",
     "album": "Give Up",
     "artist": "The Postal Service",
@@ -128,7 +120,7 @@
     "releaseDate": "02/18/2003"
   },
   {
-    "id": 17,
+    "id": 16,
     "title": "Recycled Air",
     "album": "Give Up",
     "artist": "The Postal Service",
@@ -136,7 +128,7 @@
     "releaseDate": "02/18/2003"
   },
   {
-    "id": 18,
+    "id": 17,
     "title": "Clark Gable",
     "album": "Give Up",
     "artist": "The Postal Service",
@@ -144,7 +136,7 @@
     "releaseDate": "02/18/2003"
   },
   {
-    "id": 19,
+    "id": 18,
     "title": "We Will Become Silhouettes",
     "album": "Give Up",
     "artist": "The Postal Service",
@@ -152,7 +144,7 @@
     "releaseDate": "02/18/2003"
   },
   {
-    "id": 20,
+    "id": 19,
     "title": "This Place Is a Prison",
     "album": "Give Up",
     "artist": "The Postal Service",
@@ -160,7 +152,7 @@
     "releaseDate": "02/18/2003"
   },
   {
-    "id": 21,
+    "id": 20,
     "title": "Brand New Colony",
     "album": "Give Up",
     "artist": "The Postal Service",
@@ -168,7 +160,7 @@
     "releaseDate": "02/18/2003"
   },
   {
-    "id": 22,
+    "id": 21,
     "title": "Natural Anthem",
     "album": "Give Up",
     "artist": "The Postal Service",
@@ -176,8 +168,16 @@
     "releaseDate": "02/18/2003"
   },
   {
-    "id": 23,
+    "id": 22,
     "title": "My Life",
+    "album": "Mercury Act I",
+    "artist": "Imagine Dragons",
+    "genre": "Modern Rock",
+    "releaseDate": "09/03/2021"
+  },
+  {
+    "id": 23,
+    "title": "Mondays",
     "album": "Mercury Act I",
     "artist": "Imagine Dragons",
     "genre": "Modern Rock",

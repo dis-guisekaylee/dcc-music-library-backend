@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "fdfae0ef-b12f-40d3-af8d-a97bc7957e01",
+		"name": "Music Library Backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET all songs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5010/api/songs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5010",
+					"path": [
+						"api",
+						"songs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET songs by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5010/api/songs/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5010",
+					"path": [
+						"api",
+						"songs",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE a song",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5010/api/songs/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5010",
+					"path": [
+						"api",
+						"songs",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT existing song",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"title\": \"To The Edge\",\r\n    \"album\": \"Shadowbringers Final Fantasy XIV Original Soundtrack\",\r\n    \"artist\": \"Masayoshi Soken\",\r\n    \"genre\": \"Soundtrack\",\r\n    \"releaseDate\": \"09/11/2019\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5010/api/songs/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5010",
+					"path": [
+						"api",
+						"songs",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST new song",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"title\": \"My Life\",\r\n\t\"album\": \"Mercury Act I\",\r\n\t\"artist\": \"Imagine Dragons\",\r\n\t\"genre\": \"Modern Rock\",\r\n\t\"releaseDate\": \"09/03/2021\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5010/api/songs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5010",
+					"path": [
+						"api",
+						"songs"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
